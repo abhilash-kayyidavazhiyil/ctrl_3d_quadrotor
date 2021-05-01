@@ -25,7 +25,7 @@ In the implementation of lateral position control, horizontal acceleration is ca
 
 ### Implement yaw control in C++
 
-
+In this implementation, the desired yaw and current yaw are given and used to calculate the yaw rate. Here, I calcuated the error for current and desired yaw and then multiplied it by kpYaw to get the value of the YawCmd
 
 ### Implement calculating the motor commands given commanded thrust and moments in C++
 
@@ -34,3 +34,8 @@ To calculate the motor commands from commanded thrust and moments, first will ca
 as force = torque / length
 
 then using these forces to get the motor command for each motor
+
+
+## Modified files
+./src/QuadControl.cpp
+./config/QuadControlParams.txt
